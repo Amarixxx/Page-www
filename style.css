@@ -7,12 +7,51 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+header {
+  background-color: #0A2647;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  width: 500px;
+  position: fixed;
+  top: 0px;
+  right: 80px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 1.3em;
+}
+
+
+#section1 {
+  height: 1000px;
+  background-color: #144272;
+}
+
+#section2 {
+  height: 1000px;
+  background-color: #205295;
+}
+
+#section3 {
+  height: 1000px;
+  background-color: #2C74B3;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
-    background: rgb(119, 119, 119);
+    background: #0A2647;
+    height: 500px;
 }
 
 header{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,7 +96,7 @@ header ul li a:hover{
 }
 
 .wrapper {
-    height: 45vh;
+    height: 1000px;
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -65,14 +104,14 @@ header ul li a:hover{
   }
 
   .typing-demo {
-      color: #fff;
+    color: #fff;
     width: 29ch;
     animation: typing 3s steps(29), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 4em;
   }
   
   @keyframes typing {
@@ -116,7 +155,7 @@ header ul li a:hover{
   
   .btn-3 {
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(168, 168, 168)) 100%);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(168, 168, 168)) 100%;
     width: 130px;
     height: 40px;
     line-height: 42px;

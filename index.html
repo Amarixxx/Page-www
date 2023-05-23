@@ -10,11 +10,13 @@
 <body>
   <header>
   <a href="#" class="logo">Amarix</a>
-  <ul>
-    <li><div class="frame"><button class="custom-btn btn-3"><span>About</span></button></div></li>
-    <li><div class="frame"><button class="custom-btn btn-3"><span>Projects</span></button></div></li>
-    <li><div class="frame"><button class="custom-btn btn-3"><span>Contact</span></button></div></li>
-  </ul>
+  <div class="navabar">
+    <nav>
+    <a href="#section1">O mnie</a>
+    <a href="#section2">Galeria</a>
+    <a href="#section3">Kontakt</a>
+  </nav>
+</div>
 </header>
 
 <div class="wrapper">
@@ -23,7 +25,35 @@
   </div>
 </div>
 <div class="about"><h3></div>
-  <h1 style="color:white; text-align: center;">Website coming...</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("span").on('click', function(event) {
+        if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+          $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+            window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  </script>
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+</div>
+
+<div class="main" id="section3">
+  <h2>Section 3</h2>
+</div>
 
 </body>
 </html>
